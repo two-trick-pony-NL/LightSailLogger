@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="lightsaillogger",
-    version="0.1.0",
+    version="0.1.6",
     author="Peter van Doorn",
     author_email="peter@petervandoorn.com",
     description="Log all your lightsail containers in 1 log file",

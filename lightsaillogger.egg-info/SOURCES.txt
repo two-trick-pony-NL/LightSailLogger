@@ -1,4 +1,5 @@
 LICENSE
+README.md
 setup.py
 lightsaillogger/__init__.py
 lightsaillogger/logger.py

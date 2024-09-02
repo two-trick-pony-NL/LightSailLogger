@@ -93,7 +93,7 @@ class LightsailLogger:
             logs_list = [dict(log) for log in self.unique_log_events]
             sorted_logs = sorted(logs_list, key=lambda log: log.get('createdAt', ''))
             self.clear_screen()
-            print("#### End of Log ####")
+            print("#### Start of Log ####")
             for log in sorted_logs:
                 formatted_log = self.format_log_entry(
                     container_name=log.get('containerName', ''),
@@ -101,5 +101,6 @@ class LightsailLogger:
                     message=log.get('message', '')
                 )
                 print(formatted_log)
-            print(f"\n\nFetched: {len(sorted_logs)} logs")
+            print(f"\n\nFetched: {len(sorted_logs)} Fetched logs from onwards: ", str((datetime.now(timezone.utc) - timedelta(minutes=minutes)).isoformat())[:-16], ' Last updated at: ', str((datetime.now(timezone.utc)).isoformat())[:-16])
+
             time.sleep(self.fetch_interval_seconds)
