@@ -14,3 +14,8 @@ You can install Lightsail Logger using pip. Open your terminal and run:
 
 ```bash
 pip install lightsaillogger
+```
+
+## Usage
+
+simply import the class and call the logger method
