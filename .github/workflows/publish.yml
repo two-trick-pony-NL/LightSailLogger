@@ -2,9 +2,8 @@ name: CI/CD Pipeline
 
 on:
   push:
-    tags:
-      - 'v*.*.*'  # This triggers the workflow on version tags, e.g., v1.0.0
-
+    branches: ["main"]
+    
 jobs:
   build-and-publish:
     name: Build and Publish Package
