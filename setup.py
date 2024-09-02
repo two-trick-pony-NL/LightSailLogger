@@ -1,22 +1,19 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
-    name='LightSail Loger',
-    version='0.1',
-    packages=find_packages(),
-    install_requires=[],  # Add your dependencies here
-    author='Peter van Doorn',
-    author_email='peter@petervandoorn.com',
-    description='A simple logger that combines AWS Lightsail containerlogs',
+    name="lightsaillogger",
+    version="0.1.0",
+    author="Peter van Doorn",
+    author_email="peter@petervandoorn.com",
+    description="Log all your lightsail containers in 1 log file",
     long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/mypackage',
+    long_description_content_type="text/markdown",
+    url="https://github.com/two-trick-pony-NL/LightSailLogger",  # Change to your project's URL
+    packages=find_packages(),
     classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.8',
 )

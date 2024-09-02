@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+lightsaillogger/__init__.py
+lightsaillogger/logger.py
+lightsaillogger.egg-info/PKG-INFO
+lightsaillogger.egg-info/SOURCES.txt
+lightsaillogger.egg-info/dependency_links.txt
+lightsaillogger.egg-info/top_level.txt
